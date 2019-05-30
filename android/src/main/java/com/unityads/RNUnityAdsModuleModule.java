@@ -13,7 +13,7 @@ import com.unity3d.ads.UnityAds;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import android.support.annotation.Nullable;
 
-public class RNUnityAdsModuleModule extends ReactContextBaseJavaModule {
+public class RNUnityAdsModuleModule extends ReactContextBaseJavaModule implements IUnityAdsListener {
 
   private final ReactApplicationContext reactContext;
 
@@ -129,5 +129,4 @@ public class RNUnityAdsModuleModule extends ReactContextBaseJavaModule {
 
     sendEvent(reactContext,"Error", params);
   }
-
 }
